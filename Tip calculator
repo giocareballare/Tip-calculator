@@ -1,0 +1,10 @@
+#Data Type
+cost = input("Total cost of meal\n")
+percent = input("What percentage would you like to give? 10, 12, or 15?\n")
+people = input("How many people would like to pay the bill?\n")
+percentreal = float(percent) / 100
+median = float(cost) * float(percentreal) 
+uppermedian= float(cost) + float(median)
+solution= float(uppermedian) / float(people)
+solution= str(round(solution,2))
+print("Each person should pay: " +"$" + solution )
